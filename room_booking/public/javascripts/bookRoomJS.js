@@ -226,6 +226,9 @@ if(rooms==3 && children==1){
     
   }
  }
+ //when room is 3 and children is upto 3
+
+ 
  
 }
 
@@ -260,8 +263,20 @@ children=document.getElementById("childrencount").innerText;
   if(adultcount>1)
   {
       adultcount = adultcount-1;
-  document.getElementById("adultcount").innerText=adultcount;
+     // alert(adultcount)
+      if(adultcount<roomcount){
+        //alert("enttered")
+        //alert(document.getElementById("roomcount").innerText)
+        document.getElementById("adultcount").innerText=document.getElementById("roomcount").innerText;
+
+      }
+      else{
+        document.getElementById("adultcount").innerText=adultcount;
+      }
+  
   }
+
+  
 }
 
 function children_increment()
