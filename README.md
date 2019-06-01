@@ -7,7 +7,7 @@ Booking Rooms.
 
 Prerequisites
 1> Install node
-2> git clone and download the link https://github.com/ilakkiya/ilakkiya_project_tasks
+2> git clone and download the link https://github.com/ilakkiya-pingu/ilakkiya_project_tasks
 3> Change directory
 4> Run on command Prompt
 5> Run the command(node app)
