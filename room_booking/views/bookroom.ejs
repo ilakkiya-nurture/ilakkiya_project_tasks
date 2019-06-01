@@ -1,0 +1,89 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
+     name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+    <link href="/css/mdb.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/pro.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/material-dashboard.css" rel="stylesheet"/>
+
+    <link href="/css/bookroom.css" rel="stylesheet"/>
+    <script type="text/javascript" src="/javascripts/bookRoomJS.js"></script> 
+
+</head>
+<br>
+<br>
+<br>
+<body>
+<div class="container-fluid col-md-5 ml-10">
+  <p class="clr"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp; Choose number of <b>people</b></p>
+  <div class="card ">
+  <table class="table">
+    <tbody>
+    <tr>
+      <td class="clr"><i class="fa fa-bed fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;ROOMS</td>
+      <td class="table1"> 
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-2">
+          <i  class="fa fa-minus-circle clr fa-2x" aria-hidden="true" onclick="room_decrement()" id="roomdec"></i>&nbsp;
+        </div>
+        <div class="col-md-2">
+          <p id="roomcount" class="countalign"><%= rooms%></p>
+        </div>
+	      <div class="col-md-2">
+          <i class="fa fa-plus-circle iconclr roomps fa-2x" aria-hidden="true" onclick="room_increment()" id="roominc"></i>
+        </div>
+      </div>
+	  </td>
+    </tr>
+
+
+    <tr>
+      <td class="clr"><i class="fa fa-user fa-2x " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;ADULTS</td>
+     <td class="table1">
+        <div class="row">
+            <div class="col-md-6"></div>
+	          <div class="col-md-2">	  
+	              <i class="fa fa-minus-circle clr adultsmn fa-2x" aria-hidden="true" onclick="adults_decrement()" id="adultdec"></i>&nbsp;&nbsp;
+            </div>
+            <div class="col-md-2">	 
+                <p id="adultcount" class="countalign"><%=adults%></p>
+            </div>
+           <div class="col-md-2">	 
+              <i class="fa fa-plus-circle iconclr adultsps fa-2x" aria-hidden="true" onclick="adults_increment()" id="adultinc"></i>
+           </div>
+		</div>
+		</td>
+    </tr>
+
+
+    <tr>
+       <td class="clr"><i class="fa fa-child fa-2x" aria-hidden="true"></i>&nbsp;&nbsp; CHILDREN</td>
+      <td class="table1">
+	  	 <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-2">
+        <i class="fa fa-minus-circle clr childrenmn fa-2x" aria-hidden="true" onclick="children_decrement()" id="childrendec"></i>&nbsp;&nbsp;
+    </div>
+	  <div class="col-md-2">	 
+        <p id="childrencount" class="countalign"><%=childrens%></p>
+      </div>
+    <div class="col-md-2">	
+      <i class="fa fa-plus-circle iconclr childrenps fa-2x" aria-hidden="true" onclick="children_increment()" id="childreninc"></i>
+    </div>
+    </div>
+  </td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
