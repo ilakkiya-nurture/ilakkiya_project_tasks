@@ -263,7 +263,7 @@ children=document.getElementById("childrencount").innerText;
   if(adultcount>1)
   {
       adultcount = adultcount-1;
-     // alert(adultcount)
+  
       if(adultcount<roomcount){
         //alert("enttered")
         //alert(document.getElementById("roomcount").innerText)
